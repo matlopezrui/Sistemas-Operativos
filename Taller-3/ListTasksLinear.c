@@ -9,7 +9,7 @@ int entryPoint(void) {
 	
 	printk(KERN_INFO "Started listing tasks\n");
 
-	for_each_process(task) { /
+	for_each_process(task) {
 
 		printk(KERN_INFO "Name: %-20s State: %ld\tProcess ID: %d\n", task->comm, task->state, task->pid);
 	}
